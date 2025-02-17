@@ -1,0 +1,201 @@
+
+    <!DOCTYPE html>
+    <html lang="pt">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Produto Interno e Integral</title>
+            <script type="text/javascript" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+            </script>
+        </head>
+        <body>
+            <h1>Primitivas</h1>
+            <p><p>Bem, aqui primeiro vamos fazer uma manipulação para encontrar o valor dessa integral:</p>
+<p style="text-align:center;"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <mfenced separators="|">
+        <mrow>
+          <mn>3</mn>
+          <mi>x</mi>
+          <mo>+</mo>
+          <mn>1</mn>
+        </mrow>
+      </mfenced>
+    </mrow>
+  </mrow>
+  <mi>d</mi>
+  <mi>x</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <mn>3</mn>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mi>d</mi>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <mn>1</mn>
+    </mrow>
+  </mrow>
+  <mi>d</mi>
+  <mi>x</mi>
+</math></p>
+<p>Agora fica simples de resolver, vamos lá, usando duas expressões da Tabela de Integrais Indefinidas:</p>
+<p style="text-align:center;"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <msup>
+        <mrow>
+          <mi>x</mi>
+        </mrow>
+        <mrow>
+          <mi>n</mi>
+        </mrow>
+      </msup>
+      <mi>d</mi>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <msup>
+        <mrow>
+          <mi>x</mi>
+        </mrow>
+        <mrow>
+          <mi>n</mi>
+          <mo>+</mo>
+          <mn>1</mn>
+        </mrow>
+      </msup>
+    </mrow>
+    <mrow>
+      <mi>n</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mrow>
+  </mfrac>
+  <mo>+</mo>
+  <mi>C</mi>
+  <mi> </mi>
+  <mfenced separators="|">
+    <mrow>
+      <mi>n</mi>
+      <mo>≠</mo>
+      <mo>-</mo>
+      <mn>1</mn>
+    </mrow>
+  </mfenced>
+</math></p>
+<p style="text-align:center;"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <mi>k</mi>
+      <mi> </mi>
+      <mi>d</mi>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mo>=</mo>
+  <mi>k</mi>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mi>C</mi>
+</math></p>
+<p>Agora é só aplicar e pronto:</p>
+<p style="text-align:center;"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <mn>3</mn>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mi>d</mi>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <mn>1</mn>
+    </mrow>
+  </mrow>
+  <mi>d</mi>
+  <mi>x</mi>
+  <mo>=</mo>
+  <mn>3</mn>
+  <mrow>
+    <mo stretchy="false">∫</mo>
+    <mrow>
+      <mi>x</mi>
+    </mrow>
+  </mrow>
+  <mi>d</mi>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mi>C</mi>
+  <mo>=</mo>
+  <mn>3</mn>
+  <mo>⋅</mo>
+  <mfrac>
+    <mrow>
+      <msup>
+        <mrow>
+          <mi>x</mi>
+        </mrow>
+        <mrow>
+          <mn>1</mn>
+          <mo>+</mo>
+          <mn>1</mn>
+        </mrow>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mrow>
+  </mfrac>
+  <mo>+</mo>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mi>C</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mn>3</mn>
+      <msup>
+        <mrow>
+          <mi>x</mi>
+        </mrow>
+        <mrow>
+          <mn>2</mn>
+        </mrow>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>2</mn>
+    </mrow>
+  </mfrac>
+  <mo>+</mo>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mi>C</mi>
+</math></p>
+</p>
+
+        </body>
+    </html>
