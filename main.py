@@ -61,7 +61,9 @@ async def handle_questions(
         async with session.get(url=api) as response:
             payload = await response.json()
 
-            topic_name = "título"
+            topic = payload.get("topic")
+            if topic:
+                topic_name = payload.get("name", "titulo")
             light_solution = payload["lightSolution"]
 
             await gerar_html(light_solution, topic_name, new_path)
