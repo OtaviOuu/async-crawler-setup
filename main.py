@@ -125,11 +125,11 @@ async def get_session_jwt(session_token: str, session: aiohttp.ClientSession) ->
 
 async def main():
     async with aiohttp.ClientSession() as session:
-        session_tokens = ["a346a5fb-7d03-450f-ae81-1cc79f8eed03"]
+        session_tokens = "a346a5fb-7d03-450f-ae81-1cc79f8eed03"
         session_tk = await get_session_jwt(random.choice(session_tokens), session)
         header = {
             "user-agent": user.get_random_user_agent(),
-            "Cookie": f"auth_session_token={session_tokens[0]}; user_jwt={session_tk};",
+            "Cookie": f"auth_session_token={session_tokens}; user_jwt={session_tk};",
             "origin": "https://app.respondeai.com.br",
             "referer": "https://app.respondeai.com.br/",
             "user-jwt": session_tk,
