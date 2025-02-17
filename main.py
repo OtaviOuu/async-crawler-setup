@@ -41,10 +41,6 @@ async def gerar_html(tags: list[str], topic_name: str, path: Path) -> str:
         print(f"Writing to {path}")
         await file.write(html_content)
 
-    with open(path, "w") as file:
-        print(f"Writing to {path}")
-        file.write(html_content)
-
 
 async def handle_questions(
     questions: list[str], session: aiohttp.ClientSession, path: Path
